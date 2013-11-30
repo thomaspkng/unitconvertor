@@ -1,0 +1,20 @@
+body {
+	background-color: #666666;
+	}
+p {
+	text-decoration: underline;
+	font-weight: bold;
+	font: 12px;
+	}
+div.lenc {
+	color: #AAAAAA;
+	background-color: #223377;
+	}
+div.tempc {
+	color: #AAAAAA;
+	background-color: #772233;
+	}
+div.wtgc {
+	color: #AAAAAA;
+	background-color: #227733;
+	}

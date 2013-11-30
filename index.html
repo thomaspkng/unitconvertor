@@ -1,0 +1,120 @@
+<!doctype HTML>
+<html>
+<head>
+<link rel="stylesheet" href="./css/pagestyle.css">
+<script type="text/javascript" src="phonegap.js"></script>
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/unitconvertor.js"></script>
+</head>
+<body onload="init()">
+<input type="button" value="QUIT" onclick="quitapp()"/>
+<div class="lenc" id="lenc">
+<p>Length Conversion::</p>
+<table>
+<tr>
+<td>From</td><td>TO</td>
+</tr>
+<tr>
+<td><input type="number" id="lenfrvalue" value="1"/></td>
+<td><input type="number" id="lentovalue" value="1" disabled="disabled"/></td>
+</tr>
+<tr>
+<td>
+  <input type="radio" name="lenfrunit" value="1" checked="checked">mm<br/>
+  <input type="radio" name="lenfrunit" value="10">cm<br/>
+  <input type="radio" name="lenfrunit" value="1000">m<br/>
+  <input type="radio" name="lenfrunit" value="1000000">km<br/>
+  <input type="radio" name="lenfrunit" value="25.4">inch<br/>
+  <input type="radio" name="lenfrunit" value="304.8">feet<br/>
+  <input type="radio" name="lenfrunit" value="914.4">yard<br/>
+</td>
+<td>
+  <input type="radio" name="lentounit" value="1" checked="checked">mm<br/>
+  <input type="radio" name="lentounit" value="10">cm<br/>
+  <input type="radio" name="lentounit" value="1000">m<br/>
+  <input type="radio" name="lentounit" value="1000000">km<br/>
+  <input type="radio" name="lentounit" value="25.4">inch<br/>
+  <input type="radio" name="lentounit" value="304.8">feet<br/>
+  <input type="radio" name="lentounit" value="914.4">yard<br/>
+</td>
+</tr>
+<tr><td colspan="2"><input type="button" value="Convert" id="chkbtn"></td></tr>
+<tr><td colspan="2"><hr></td></tr>
+<tr>
+<td>Other Convertor::</td>
+<td>
+<input type="button" value="Temperature" onclick="gotemp()"/>
+<input type="button" value="Weight" onclick="gowtg()"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="tempc" id="tempc">
+<p>Temperature Conversion::</p>
+<table>
+<tr>
+<td>From</td><td>To</td>
+</tr>
+<tr>
+<td><input type="number" id="tempfrvalue" value="1"/></td>
+<td><input type="number" id="temptovalue" value="1" disabled="disabled"/></td>
+</tr>
+<tr>
+<td colspan="2">
+  <input type="radio" name="tempfrunit" value="1" checked="checked">Celsius -> Fahrenheit<br/>
+  <input type="radio" name="tempfrunit" value="2">Fahrenheit -> Celsius<br/>
+ </td>
+</tr>
+<tr><td colspan="2"><input type="button" value="Convert" id="tempchkbtn"></td></tr>
+<tr><td colspan="2"><hr></td></tr>
+<tr>
+<td>Other Convertor::</td>
+<td>
+<input type="button" value="Length" onclick="golen()"/>
+<input type="button" value="Weight" onclick="gowtg()"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="wtgc" id="wtgc">
+<p>Weight Conversion::</p>
+<table>
+<tr>
+<td>From</td><td>TO</td>
+</tr>
+<tr>
+<td><input type="number" id="wtgfrvalue" value="1"/></td>
+<td><input type="number" id="wtgtovalue" value="1" disabled="disabled"/></td>
+</tr>
+<tr>
+<td>
+  <input type="radio" name="wtgfrunit" value="1" checked="checked">g<br/>
+  <input type="radio" name="wtgfrunit" value="1000">kg<br/>
+  <input type="radio" name="wtgfrunit" value="1000000">Metric Ton<br/>
+  <input type="radio" name="wtgfrunit" value="28.34952">oz<br/>
+  <input type="radio" name="wtgfrunit" value="453.59237">lb<br/>
+</td>
+<td>
+  <input type="radio" name="wtgtounit" value="1" checked="checked">g<br/>
+  <input type="radio" name="wtgtounit" value="1000">kg<br/>
+  <input type="radio" name="wtgtounit" value="1000000">Metric Ton<br/>
+  <input type="radio" name="wtgtounit" value="28.34952">oz<br/>
+  <input type="radio" name="wtgtounit" value="453.59237">lb<br/>
+</td>
+</tr>
+<tr><td colspan="2"><input type="button" value="Convert" id="wtgchkbtn"></td></tr>
+<tr><td colspan="2"><hr></td></tr>
+<tr>
+<td>Other Convertor::</td>
+<td>
+<input type="button" value="Length" onclick="golen()"/>
+<input type="button" value="Temperature" onclick="gotemp()"/>
+</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>
