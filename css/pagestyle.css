@@ -4,17 +4,20 @@ body {
 p {
 	text-decoration: underline;
 	font-weight: bold;
-	font: 12px;
+	font: 10px;
 	}
 div.lenc {
 	color: #AAAAAA;
+	font: 8px;
 	background-color: #223377;
 	}
 div.tempc {
 	color: #AAAAAA;
+	font: 8px;
 	background-color: #772233;
 	}
 div.wtgc {
 	color: #AAAAAA;
+	font: 8px;
 	background-color: #227733;
 	}
