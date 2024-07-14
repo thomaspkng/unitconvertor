@@ -1,3 +1,5 @@
+(build.phonegap projects, discontinuous, left for record only) [2024-07-14]
+
 unitconvertor
 =============
 
